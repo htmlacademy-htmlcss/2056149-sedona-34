@@ -26,7 +26,7 @@
               <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list navigation-user">
+          <ul class="navigation-user">
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="#">
                 <span class="visually-hidden">Поиск</span>
@@ -61,7 +61,7 @@
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Инфраструктура:</legend>
+                <legend class="catalog-filter-title catalog-filter-infra">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -84,7 +84,7 @@
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <legend class="catalog-filter-title catalog-filter-type">Тип жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -106,8 +106,11 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="button button-small button-second" type="submit">Применить</button>
-              <button class="button-reset" type="reset">Сбросить</button>
+              <span class="catalog-filter-price">Стоимость, ₽:</span>
+              <div class="catalog-filter-button">
+                <button class="button button-small button-second button-filter" type="submit">Применить</button>
+                <button class="button-reset" type="reset">Сбросить</button>
+              </div>
             </form>
           </section>
         </div>
@@ -224,33 +227,35 @@
       <footer class="page-footer">
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <div class="footer-social">
-            <ul class="footer-social-list">
-              <li class="footer-social-item vk">
-                <a class="button-social" href="https://vk.com/htmlacademy" target="_blank">
-                  <span class="visually-hidden">Вконтакте</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="button-social" href="https://t.me/htmlacademy" target="_blank">
-                  <span class="visually-hidden">Телеграм</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="button-social" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
-                  <span class="visually-hidden">Ютуб</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-phone">
-            <a class="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </div>
-          <div class="footer-htmlacademy">
-            <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/" target="_blank">
-              <img class="navigation-logo" src="images/typography/logo/logo-htmlacademy.svg" width="115" height="33"
-                alt="HTML Academy">
-            </a>
+          <div class="footer-container">
+            <div class="footer-social">
+              <ul class="footer-social-list">
+                <li class="footer-social-item">
+                  <a class="button-social" href="https://vk.com/htmlacademy" target="_blank">
+                    <span class="visually-hidden">Вконтакте</span>
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="button-social" href="https://t.me/htmlacademy" target="_blank">
+                    <span class="visually-hidden">Телеграм</span>
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="button-social" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+                    <span class="visually-hidden">Ютуб</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-phone">
+              <a class="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </div>
+            <div class="footer-htmlacademy">
+              <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/" target="_blank">
+                <img class="navigation-logo" src="images/typography/logo/logo-htmlacademy.svg" width="115" height="33"
+                  alt="HTML Academy">
+              </a>
+            </div>
           </div>
         </section>
       </footer>
