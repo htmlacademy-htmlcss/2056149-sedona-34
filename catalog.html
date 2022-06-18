@@ -115,21 +115,23 @@
           </section>
         </div>
         <section class="catalog-hotels">
-          <p class="catalog-main">Найдено гостиниц: 38</p>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="popular">Сначала популярные</option>
-            <option value="cheap" selected>Сначала дешёвые</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-          <a class="button-catalog button-catalog-current" href="#">
-            <span class="visually-hidden">Показать таблицу</span>
-          </a>
-          <a class="button-catalog" href="#">
-            <span class="visually-hidden">Показать слайд-шоу</span>
-          </a>
-          <a class="button-catalog" href="#">
-            <span class="visually-hidden">Показать список</span>
-          </a>
+          <div class="select-control-container">
+            <p class="catalog-main">Найдено гостиниц: 38</p>
+            <select class="select-control-1" aria-label="Сортировка">
+              <option value="select-control-item">Сначала популярные</option>
+              <option value="select-control-item" selected>Сначала дешёвые</option>
+              <option value="select-control-item">Сначала дорогие</option>
+            </select>
+            <a class="button-catalog button-catalog-current" href="#">
+              <span class="visually-hidden">Показать таблицу</span>
+            </a>
+            <a class="button-catalog" href="#">
+              <span class="visually-hidden">Показать слайд-шоу</span>
+            </a>
+            <a class="button-catalog" href="#">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+          </div>
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -137,12 +139,14 @@
                   alt="Гостиница Amara Resort & Spa">
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
               </a>
-              <p class="product-card-type">Гостиница</p>
-              <p class="product-card-price">от 4000 ₽</p>
-              <a class="button button-small button-basic" href="#">Подробнее</a>
-              <a class="button button-small button-second" href="#">В избранное</a>
-              <span class="visually-hidden">Четыре звезды</span>
-              <p class="product-card-rating">Рейтинг: 8,5</p>
+              <div class="product-card-container">
+                <p class="product-card-type">Гостиница</p>
+                <p class="product-card-price">от 4000 ₽</p>
+                <a class="button button-small button-basic button-product" href="#">Подробнее</a>
+                <a class="button button-small button-second button-product" href="#">В избранное</a>
+                <span class="visually-hidden">Четыре звезды</span>
+                <p class="product-card-rating">Рейтинг: 8,5</p>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -150,12 +154,14 @@
                   alt="Гостиница Villas at Poco Diablo">
                 <h3 class="product-card-title text-headings">Villas at Poco Diablo</h3>
               </a>
-              <p class="product-card-type">Гостиница</p>
-              <p class="product-card-price">от 5000 ₽</p>
-              <a class="button button-small button-basic" href="#">Подробнее</a>
-              <a class="button button-small button-select" href="#">В избранном</a>
-              <span class="visually-hidden">Четыре звезды</span>
-              <p class="product-card-rating">Рейтинг: 9,2</p>
+              <div class="product-card-container">
+                <p class="product-card-type">Гостиница</p>
+                <p class="product-card-price">от 5000 ₽</p>
+                <a class="button button-small button-basic button-product" href="#">Подробнее</a>
+                <a class="button button-small button-select button-product" href="#">В избранном</a>
+                <span class="visually-hidden">Четыре звезды</span>
+                <p class="product-card-rating">Рейтинг: 9,2</p>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -163,12 +169,14 @@
                   alt="Гостиница Desert Quail Inn">
                 <h3 class="product-card-title text-headings">Desert Quail Inn</h3>
               </a>
-              <p class="product-card-type">Гостиница</p>
-              <p class="product-card-price">от 2500 ₽</p>
-              <a class="button button-small button-basic" href="#">Подробнее</a>
-              <a class="button button-small button-second" href="#">В избранное</a>
-              <span class="visually-hidden">Три звезды</span>
-              <p class="product-card-rating">Рейтинг: 6,9</p>
+              <div class="product-card-container">
+                <p class="product-card-type">Гостиница</p>
+                <p class="product-card-price">от 2500 ₽</p>
+                <a class="button button-small button-basic button-product" href="#">Подробнее</a>
+                <a class="button button-small button-second button-product" href="#">В избранное</a>
+                <span class="visually-hidden">Три звезды</span>
+                <p class="product-card-rating">Рейтинг: 6,9</p>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -176,50 +184,56 @@
                   alt="Гостиница GreenTree Inn">
                 <h3 class="product-card-title text-headings">GreenTree Inn</h3>
               </a>
-              <p class="product-card-type">Гостиница</p>
-              <p class="product-card-price">от 1500 ₽</p>
-              <a class="button button-small button-basic" href="#">Подробнее</a>
-              <a class="button button-small button-second" href="#">В избранное</a>
-              <span class="visually-hidden">Две звезды</span>
-              <div class="product-card-rating">Рейтинг: 5,0</div>
+              <div class="product-card-container">
+                <p class="product-card-type">Гостиница</p>
+                <p class="product-card-price">от 1500 ₽</p>
+                <a class="button button-small button-basic button-product" href="#">Подробнее</a>
+                <a class="button button-small button-second button-product" href="#">В избранное</a>
+                <span class="visually-hidden">Две звезды</span>
+                <div class="product-card-rating">Рейтинг: 5,0</div>
+              </div>
             </li>
           </ul>
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="button button-pagination pagination-current button-big button-second">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="button button-pagination button-big button-second" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="button button-pagination button-big button-second" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="button button-pagination button-big button-second" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="button button-pagination button-big button-second" href="#">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="button button-pagination button-big button-second" href="#">10</a>
-            </li>
-          </ul>
-          <p class="hotels-control">Гостиниц на странице:</p>
-          <select class="select-control">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4" selected>4</option>
-          </select>
+          <div class="pagination-container">
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="button button-pagination pagination-current button-big button-second">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="button button-pagination button-big button-second" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="button button-pagination button-big button-second" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="button button-pagination button-big button-second" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="button button-pagination button-big button-second" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="button button-pagination button-big button-second" href="#">10</a>
+              </li>
+            </ul>
+            <form class="control-form">
+            <label class="hotels-control" for="select-control">Гостиниц на странице:</label>
+            <select class="select-control-2" name="select-control" id="select-control">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4" selected>4</option>
+            </select>
+            </form>
+          </div>
         </section>
-        <section class="newsletter">
+        <section class="newsletter-catalog">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-description">Только полезная информация и никакого спама, <br>
             честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="newsletter-field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-              required>
+            <input class="newsletter-field-catalog" placeholder="Ваш e-mail" type="email" name="newsletter-email"
+              id="newsletter-email" required>
             <button class="button button-big button-second button-newsletter" type="submit">Подписаться</button>
           </form>
         </section>
