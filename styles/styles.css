@@ -273,8 +273,7 @@ body {
 }
 
 .search {
-  padding-top: 91px;
-  padding-bottom: 93px;
+  padding: 91px 200px 93px;
 }
 
 .search-title {
@@ -293,15 +292,15 @@ body {
 }
 
 .newsletter {
-  color: #FFFFFF;
-  background: url("../images/background/background-subscribe.jpg") #496D82;
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding: 94px 200px;
+}
+
+.newsletter-index {
+  color: #FFFFFF;
+  background: url("../images/background/background-subscribe.jpg") #496D82;
 }
 
 .newsletter-title {
@@ -337,10 +336,7 @@ body {
   background: url("../images/background/background-filter.jpg") #4b6075;
   background-size: 100% auto;
   background-repeat: no-repeat;
-}
-
-.inner-header {
-  padding: 35px 70px 20px;
+  padding: 35px 70px 70px;
 }
 
 .inner-header-title {
@@ -367,7 +363,7 @@ body {
 }
 
 .catalog-filter {
-  padding: 20px 70px 70px;
+  margin-top: 40px;
 }
 
 .catalog-filter-form {
@@ -433,12 +429,15 @@ body {
   margin-top: 20px;
 }
 
+.catalog-hotels {
+  padding-left: 73px;
+  padding-right: 71px;
+  padding-top: 55px;
+  padding-bottom: 25px;
+}
+
 .catalog-found-container {
   display: flex;
-  padding-top: 55px;
-  padding-bottom: 28px;
-  padding-left: 72px;
-  padding-right: 71px;
 }
 
 .catalog-found {
@@ -466,10 +465,9 @@ body {
   grid-column-gap: 18px;
   list-style-type: none;
   margin: 0;
-  padding-top: 28px;
-  padding-left: 73px;
-  padding-right: 71px;
-  padding-bottom: 66px;
+  padding: 0;
+  margin-top: 56px;
+  margin-bottom: 96px;
 }
 
 .product-card {
@@ -521,10 +519,6 @@ body {
 
 .pagination-container {
   display: flex;
-  padding-top: 30px;
-  padding-left: 73px;
-  padding-bottom: 25px;
-  padding-right: 71px;
 }
 
 .pagination {
@@ -577,13 +571,6 @@ body {
 .newsletter-catalog {
   color: #000000;
   background-color: #FFFFFF;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-right: 40px;
-  padding-left: 40px;
 }
 
 .newsletter-field-catalog {
@@ -597,12 +584,10 @@ body {
 }
 
 .page-footer {
-  height: 120px;
-}
-
-.footer-contacts {
+  min-height: 50px;
   display: flex;
   padding: 40px 70px 30px;
+  align-items: center;
 }
 
 .footer-social {
