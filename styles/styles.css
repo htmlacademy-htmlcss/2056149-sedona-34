@@ -212,7 +212,7 @@ body {
   position: relative;
   background: url("../images/background/background-hero.jpg") #6c879e;
   background-size: 100% auto;
-  background-repeat: no-repeat, no-repeat;
+  background-repeat: no-repeat;
   color: #FFFFFF;
 }
 
@@ -350,6 +350,7 @@ body {
 }
 
 .newsletter-index {
+  position:relative;
   color: #FFFFFF;
   background: url("../images/background/background-subscribe.jpg") #496D82;
   background-size: 100% auto;
@@ -385,7 +386,7 @@ body {
 }
 
 .main-filter {
-  color: #ffffff;
+  color: #FFFFFF;
   background: url("../images/background/background-filter.jpg") #4b6075;
   background-size: 100% auto;
   background-repeat: no-repeat;
