@@ -345,8 +345,6 @@ body {
 }
 
 .newsletter {
-  background-size: 100% auto;
-  background-repeat: no-repeat;
   text-align: center;
   padding: 94px 200px;
 }
@@ -354,6 +352,8 @@ body {
 .newsletter-index {
   color: #FFFFFF;
   background: url("../images/background/background-subscribe.jpg") #496D82;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .newsletter-title {
