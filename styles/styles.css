@@ -1095,3 +1095,220 @@ body {
 .footer-htmlacademy-logo:active {
   fill: #746056;
 }
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color:  #F2F2F2CC;
+  z-index: 3;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 70px;
+  padding-top: 62px;
+  background-color: #FFFFFF;
+  margin-top: 396px;
+}
+
+.modal-search {
+  width: 575px;
+  box-shadow: 0 25px 50px 0 #00000026;
+  border-radius: 30px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 54px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  border: none;
+  border-radius: 50%;
+  background-image: url("../images/typography/interface/interface-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 63px;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.field-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.search-form-field {
+  border: none;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  padding: 15px 19px 14px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.field-date {
+  width: 382px;
+  background-image: url("../images/typography/interface/interface-date.svg");
+  background-repeat: no-repeat;
+  background-position: right 19px bottom 50%;
+}
+
+.search-group-label {
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 12px;
+  text-transform: capitalize;
+}
+
+.group-date {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.group-date-description {
+  position: absolute;
+  left: 155px;
+  top: 61px;
+  font-size: 16px;
+  line-height: 21px;
+  display: none;
+  vertical-align: bottom
+}
+
+.description-current {
+  display: block;
+}
+
+.error {
+  color: #FF5757;
+}
+
+.success {
+  color: #333333;
+}
+
+.group-people-container {
+  display: flex;
+}
+
+.group-adults {
+  width: 288px;
+  margin-right: 56px;
+}
+
+.group-children {
+  width: 230px;
+  position: relative;
+}
+
+.label-adults {
+  margin-right: 64px;
+}
+
+.label-children {
+  margin-right: 43px;
+}
+
+.people-container {
+  width: 133px;
+  display: grid;
+  grid-template-columns: repeat(3, 44px);
+  height: 50px;
+}
+
+.field-people {
+  padding-left: 17px;
+  padding-right: 0;
+  border-radius: 0;
+  color: #000000;
+}
+
+.search-group-button {
+  padding: 0;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-minus {
+  border-radius: 4px 0 0 4px;
+  background-image: url("../images/typography/interface/interface-minus.svg");
+
+}
+
+.button-plus {
+  border-radius: 0 4px 4px 0;
+  background-image: url("../images/typography/interface/interface-plus.svg");
+}
+
+.tooltip-toggle {
+  position: absolute;
+  background-color: #83B3D3;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  top: 14px;
+  left: 54px;
+}
+
+.tooltip-description {
+  box-sizing: border-box;
+  position: absolute;
+  font-size: 16px;
+  line-height: 21px;
+  box-shadow: 0 15px 30px 0 #0000004D;
+  background-color: #333333;
+  color: #FFFFFF;
+  border-radius: 10px;
+  width: 256px;
+  padding: 15px 18px 15px 22px;
+  top: 54px;
+  left: -61px;
+  display: none;
+}
+
+.tooltip-description::before {
+  content: "";
+  background-color: #333333;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -6px;
+  left: 121px;
+}
+
+.tooltip:hover .tooltip-description {
+  display: block;
+}
+
+.search-form-button {
+  width: 575px;
+  background-color: #83B3D3;
+  color: #FFFFFF;
+  margin-top: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 20px;
+  line-height: 36px;
+}
