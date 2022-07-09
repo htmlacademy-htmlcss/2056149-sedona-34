@@ -201,6 +201,70 @@
         </div>
       </footer>
     </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group group-date">
+              <label class="search-group-label" for="search-arrival-date">Дата заезда:</label>
+              <input class="search-form-field field-date" type="text" id="search-arrival-date"
+                name="search-arrival-date" value="27 апреля 2020">
+              <span class="group-date-description description-current error">Мы не можем отправить вас в прошлое.</span>
+              <span class="group-date-description success">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <p class="field-group group-date">
+              <label class="search-group-label" for="search-departure-date">Дата выезда:</label>
+              <input class="search-form-field field-date" type="text" id="search-departure-date"
+                name="search-departure-date" value="1 сентября 2021">
+              <span class="group-date-description error">Мы не можем отправить вас в прошлое.</span>
+              <span class="group-date-description description-current success">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <div class="group-people-container">
+              <p class="field-group group-adults">
+                <label class="search-group-label label-adults" for="search-adults">Взрослые:</label>
+                <span class="people-container">
+                  <button class="search-group-button button-minus" type="button" id="search-adults"></button>
+                  <input class="search-form-field field-people" type="number" id="search-adults" name="search-adults"
+                    value="2" readonly disabled>
+                  <button class="search-group-button button-plus" type="button" id="search-adults"></button>
+                </span>
+              </p>
+              <p class="field-group group-children">
+                <label class="search-group-label label-children" for="search-children">Дети:&nbsp</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg aria-hidden="true" focusable="false" width="1" height="9" viewBox="0 0 1 9" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#a)" fill="#fff">
+                        <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="a">
+                          <path fill="#fff" d="M0 0h1v9H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <span class="tooltip-description">Укажите количество детей, которые будут с вами, возраст которых от 6
+                    до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                <span class="people-container">
+                  <button class="search-group-button button-minus" type="button"></button>
+                  <input class="search-form-field field-people" type="number" id="search-children"
+                    name="search-children" value="1" readonly disabled>
+                  <button class="search-group-button button-plus" type="button">
+                </span>
+              </p>
+            </div>
+            <button class="button search-form-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
