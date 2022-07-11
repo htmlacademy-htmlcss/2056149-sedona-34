@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Сайт туристического городка «Седона»</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -202,39 +203,97 @@
       </footer>
     </div>
     <div class="modal-container modal-container-close">
-      <div class="modal modal-search">
-        <button class="modal-close-button">
+      <div class="modal">
+        <button class="modal-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="modal-content-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-content-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group group-date">
-              <label class="search-group-label" for="search-arrival-date">Дата заезда:</label>
-              <input class="search-form-field field-date" type="text" id="search-arrival-date"
-                name="search-arrival-date" value="27 апреля 2020">
-              <span class="group-date-description description-current error">Мы не можем отправить вас в прошлое.</span>
-              <span class="group-date-description success">На эти даты есть свободные номера. Пока есть.</span>
+              <label class="modal-group-label" for="modal-arrival-date">Дата заезда:</label>
+              <input class="modal-form-field field-date" type="text" id="modal-arrival-date" name="modal-arrival-date"
+                value="27 апреля 2020">
+              <button class="modal-field-button" type="button">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z"
+                    fill="#0000004D" />
+                  <path
+                    d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z"
+                    fill="#0000004D" />
+                  <path d="M7.5 10C7.8 10 8 9.8 8 9.5C8 9.2 7.8 9 7.5 9C7.2 9 7 9.2 7 9.5C7 9.8 7.2 10 7.5 10Z"
+                    fill="#0000004D" />
+                  <path d="M9.5 10C9.8 10 10 9.8 10 9.5C10 9.2 9.8 9 9.5 9C9.2 9 9 9.2 9 9.5C9 9.8 9.2 10 9.5 10Z"
+                    fill="#0000004D" />
+                  <path d="M5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11Z"
+                    fill="#0000004D" />
+                  <path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z"
+                    fill="#0000004D" />
+                  <path d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z"
+                    fill="#0000004D" />
+                  <path d="M7.5 11C7.2 11 7 11.2 7 11.5C7 11.8 7.2 12 7.5 12C7.8 12 8 11.8 8 11.5C8 11.2 7.8 11 7.5 11Z"
+                    fill="#0000004D" />
+                  <path
+                    d="M9.5 11C9.2 11 9 11.2 9 11.5C9 11.8 9.2 12 9.5 12C9.8 12 10 11.8 10 11.5C10 11.2 9.8 11 9.5 11Z"
+                    fill="#0000004D" />
+                  <path
+                    d="M11.5 10C11.8 10 12 9.8 12 9.5C12 9.2 11.8 9 11.5 9C11.2 9 11 9.2 11 9.5C11 9.8 11.2 10 11.5 10Z"
+                    fill="#0000004D" />
+                  <path
+                    d="M11.5 11C11.2 11 11 11.2 11 11.5C11 11.8 11.2 12 11.5 12C11.8 12 12 11.8 12 11.5C12 11.2 11.8 11 11.5 11Z"
+                    fill="#0000004D" />
+                </svg>
+              </button>
             </p>
+            <span class="group-date-description error">Мы не можем отправить вас в прошлое.</span>
             <p class="field-group group-date">
-              <label class="search-group-label" for="search-departure-date">Дата выезда:</label>
-              <input class="search-form-field field-date" type="text" id="search-departure-date"
-                name="search-departure-date" value="1 сентября 2021">
-              <span class="group-date-description error">Мы не можем отправить вас в прошлое.</span>
-              <span class="group-date-description description-current success">На эти даты есть свободные номера. Пока есть.</span>
+              <label class="modal-group-label" for="modal-departure-date">Дата выезда:</label>
+              <input class="modal-form-field field-date" type="text" id="modal-departure-date"
+                name="modal-departure-date" value="1 сентября 2021">
+              <button class="modal-field-button" type="button">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z"
+                    fill="#0000004D" />
+                  <path
+                    d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z"
+                    fill="#0000004D" />
+                  <path d="M7.5 10C7.8 10 8 9.8 8 9.5C8 9.2 7.8 9 7.5 9C7.2 9 7 9.2 7 9.5C7 9.8 7.2 10 7.5 10Z"
+                    fill="#0000004D" />
+                  <path d="M9.5 10C9.8 10 10 9.8 10 9.5C10 9.2 9.8 9 9.5 9C9.2 9 9 9.2 9 9.5C9 9.8 9.2 10 9.5 10Z"
+                    fill="#0000004D" />
+                  <path d="M5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11Z"
+                    fill="#0000004D" />
+                  <path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z"
+                    fill="#0000004D" />
+                  <path d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z"
+                    fill="#0000004D" />
+                  <path d="M7.5 11C7.2 11 7 11.2 7 11.5C7 11.8 7.2 12 7.5 12C7.8 12 8 11.8 8 11.5C8 11.2 7.8 11 7.5 11Z"
+                    fill="#0000004D" />
+                  <path
+                    d="M9.5 11C9.2 11 9 11.2 9 11.5C9 11.8 9.2 12 9.5 12C9.8 12 10 11.8 10 11.5C10 11.2 9.8 11 9.5 11Z"
+                    fill="#0000004D" />
+                  <path
+                    d="M11.5 10C11.8 10 12 9.8 12 9.5C12 9.2 11.8 9 11.5 9C11.2 9 11 9.2 11 9.5C11 9.8 11.2 10 11.5 10Z"
+                    fill="#0000004D" />
+                  <path
+                    d="M11.5 11C11.2 11 11 11.2 11 11.5C11 11.8 11.2 12 11.5 12C11.8 12 12 11.8 12 11.5C12 11.2 11.8 11 11.5 11Z"
+                    fill="#0000004D" />
+                </svg>
+              </button>
             </p>
+            <span class="group-date-description">На эти даты есть свободные номера. Пока есть.</span>
             <div class="group-people-container">
               <p class="field-group group-adults">
-                <label class="search-group-label label-adults" for="search-adults">Взрослые:</label>
+                <label class="modal-group-label label-adults" for="modal-adults">Взрослые:</label>
                 <span class="people-container">
-                  <button class="search-group-button button-minus" type="button" id="search-adults"></button>
-                  <input class="search-form-field field-people" type="number" id="search-adults" name="search-adults"
+                  <button class="modal-group-button button-minus" type="button"></button>
+                  <input class="modal-form-field field-people" type="number" id="modal-adults" name="search-adults"
                     value="2" readonly disabled>
-                  <button class="search-group-button button-plus" type="button" id="search-adults"></button>
+                  <button class="modal-group-button button-plus" type="button"></button>
                 </span>
               </p>
               <p class="field-group group-children">
-                <label class="search-group-label label-children" for="search-children">Дети:&nbsp</label>
+                <label class="modal-group-label label-children" for="modal-children">Дети:&nbsp;</label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button">
                     <svg aria-hidden="true" focusable="false" width="1" height="9" viewBox="0 0 1 9" fill="none"
@@ -253,14 +312,14 @@
                     до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
                 <span class="people-container">
-                  <button class="search-group-button button-minus" type="button"></button>
-                  <input class="search-form-field field-people" type="number" id="search-children"
-                    name="search-children" value="1" readonly disabled>
-                  <button class="search-group-button button-plus" type="button">
+                  <button class="modal-group-button button-minus" type="button"></button>
+                  <input class="modal-form-field field-people" type="number" id="modal-children" name="modal-children"
+                    value="1" readonly disabled>
+                  <button class="modal-group-button button-plus" type="button"></button>
                 </span>
               </p>
             </div>
-            <button class="button search-form-button" type="submit">Найти</button>
+            <button class="button modal-form-button" type="submit">Найти</button>
           </form>
         </section>
       </div>

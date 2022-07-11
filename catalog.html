@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Сайт туристического городка «Седона»</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -128,13 +129,13 @@
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                   <div class="range">
                     <div class="range-wrapper-inputs">
-                      <label class="catalog-filter-label">
-                        <input class="range-input input-min" type="number" value="0" name="min-price">
-                        <p class="input-text input-text-min">от</p>
+                      <label class="catalog-filter-label" for="min-price">
+                        <input class="range-input input-min" type="number" value="0" name="min-price" id="min-price">
+                        <span class="input-text input-text-min">от</span>
                       </label>
-                      <label class="catalog-filter-label">
-                        <input class="range-input input-max" type="number" value="9000" name="max-price">
-                        <p class="input-text input-text-max">до</p>
+                      <label class="catalog-filter-label" for="max-price">
+                        <input class="range-input input-max" type="number" value="9000" name="max-price" id="max-price">
+                        <span class="input-text input-text-max">до</span>
                       </label>
                     </div>
                     <div class="range-scale">
@@ -187,10 +188,10 @@
                 <a class="button button-small button-second button-product" href="#">В избранное</a>
                 <div class="product-card-stars">
                   <span class="visually-hidden">Четыре звезды</span>
-                  <button class="star"></button>
-                  <button class="star"></button>
-                  <button class="star"></button>
-                  <button class="star"></button>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
                 </div>
                 <p class="product-card-rating">Рейтинг: 8,5</p>
               </div>
@@ -290,7 +291,8 @@
         </section>
         <section class="newsletter newsletter-catalog">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-          <p class="newsletter-description newsletter-description-catalog">&nbspТолько полезная информация и никакого спама, <br>
+          <p class="newsletter-description newsletter-description-catalog">&nbsp;Только полезная информация и никакого
+            спама, <br>
             честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Email</label>
